@@ -24,6 +24,7 @@ const Home:FC = () => {
       description="Description will go into a meta tag in <head />"
     >
       <HomepageHeader />
+      test
     </Layout>
   );
 };
