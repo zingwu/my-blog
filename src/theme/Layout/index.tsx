@@ -20,7 +20,6 @@ import { ThemeClassNames } from '@docusaurus/theme-common';
 import './styles.css';
 
 function Layout(props: Props): JSX.Element {
-  console.log(props);
   const { isIndex } = props;
   const {
     children, noFooter, wrapperClassName, pageClassName,

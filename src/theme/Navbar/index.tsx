@@ -89,9 +89,11 @@ function Navbar({ isIndex = false }: INavbar): JSX.Element {
         [styles.navbarHideable]: hideOnScroll,
         [styles.navbarHidden]: hideOnScroll && !isNavbarVisible,
       })}
-      style={isIndex ? { position: 'absolute', backgroundColor: 'transparent', boxShadow: '0 0 0 0' } : null}
+      style={isIndex ? {
+        position: 'absolute', backgroundColor: 'transparent', boxShadow: '0 0 0 0',
+      } : null}
     >
-      <div className="navbar__inner">
+      <div className={clsx('navbar__inner', { [styles.customNavbar]: isIndex === false })}>
         <div className="navbar__items">
           {items != null && items.length !== 0 && (
             <button
