@@ -3,7 +3,7 @@
 import React, { FC } from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Zing from '@site/static/img/default-monochrome.svg';
+import Zing from '../../static/img/default-monochrome.svg';
 import { Quote } from '../components';
 
 const Home:FC = () => {
