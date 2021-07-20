@@ -6,13 +6,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'Zing',
   tagline: 'bug generator',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://www.zingwu.xyz',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'zing', // Usually your GitHub org/user name.
-  projectName: 'blog', // Usually your repo name.
+  organizationName: 'zingwu', // Usually your GitHub org/user name.
+  projectName: 'my-blog', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'My Site',
@@ -83,6 +83,20 @@ module.exports = {
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
+    },
+    i18n: {
+      defaultLocale: 'zh-cn',
+      locales: ['en', 'zh-cn'],
+      localeConfigs: {
+        en: {
+          label: 'English',
+          direction: 'ltr',
+        },
+        'zh-cn': {
+          label: '中文（中国）',
+          direction: 'ltr',
+        },
+      },
     },
   },
   presets: [

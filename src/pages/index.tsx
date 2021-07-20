@@ -1,20 +1,9 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable import/extensions */
 import React, { FC } from 'react';
-import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-      </div>
-    </header>
-  );
-}
+import { Quote } from '../components';
 
 const Home:FC = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -22,9 +11,10 @@ const Home:FC = () => {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
+      isIndex
     >
-      <HomepageHeader />
-      test
+      <img src="https://api.ixiaowai.cn/gqapi/gqapi.php" />
+      <Quote />
     </Layout>
   );
 };
