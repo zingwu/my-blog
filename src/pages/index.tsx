@@ -14,14 +14,18 @@ const Home:FC = () => {
       description="Description will go into a meta tag in <head />"
       isIndex
     >
-      <img src="https://api.ixiaowai.cn/gqapi/gqapi.php" />
-      <Zing style={{
-        position: 'absolute', top: 400, left: 600, width: 500,
+      <div style={{
+        backgroundImage: 'url(\'https://api.ixiaowai.cn/gqapi/gqapi.php\')', height: '100vh', backgroundSize: '100% 100%', display: 'flex', justifyContent: 'center',
       }}
-      />
+      >
+        <Zing style={{ width: 500 }} />
+      </div>
       <Quote />
     </Layout>
   );
 };
 
 export default Home;
+// style = {{
+//   position: 'absolute', top: 400, left: 700, width: 500,
+//         }}
