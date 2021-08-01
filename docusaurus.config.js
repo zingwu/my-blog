@@ -27,11 +27,16 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          docId: 'index',
+          docId: 'front-end/index',
           position: 'left',
-          label: 'Tutorial',
+          label: '前端',
         },
-        { to: '/blog', label: 'Blog', position: 'left' },
+        {
+          type: 'doc',
+          docId: 'utils/index',
+          position: 'left',
+          label: '工具',
+        },
         {
           href: 'https://github.com/zingwu',
           label: 'GitHub',

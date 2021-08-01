@@ -15,7 +15,13 @@ const Home:FC = () => {
       isIndex
     >
       <div style={{
-        backgroundImage: 'url(\'https://api.ixiaowai.cn/gqapi/gqapi.php\')', height: '100vh', backgroundSize: '100% 100%', display: 'flex', justifyContent: 'center',
+        backgroundImage: 'url(\'https://api.ixiaowai.cn/gqapi/gqapi.php\')',
+        height: '100vh',
+        width: '100%',
+        backgroundSize: '100% 100%',
+        backgroundRepeat: 'no-repeat',
+        display: 'flex',
+        justifyContent: 'center',
       }}
       >
         <Zing style={{ width: 500 }} />
@@ -26,6 +32,3 @@ const Home:FC = () => {
 };
 
 export default Home;
-// style = {{
-//   position: 'absolute', top: 400, left: 700, width: 500,
-//         }}
